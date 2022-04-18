@@ -1,0 +1,27 @@
+{
+  "name": "modelelectronics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucetangdesign/modelelectronics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucetangdesign/modelelectronics/issues"
+  },
+  "homepage": "https://github.com/brucetangdesign/modelelectronics#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
