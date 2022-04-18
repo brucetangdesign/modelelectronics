@@ -1,2 +1,19 @@
+// Colors
 $primary: #C40000;
 $secondary: #0166FF;
+$model-dark-blue: #002050;
+$body-color: #000000;
+
+//Buttons
+$btn-border-radius: 3px;
+$btn-border-radius-sm: 3px;
+$btn-border-radius-lg: 3px;
+$btn-padding-y: 12px;
+$btn-padding-x: 20px;
+
+//Cntainers
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px);

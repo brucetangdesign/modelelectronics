@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <button class="btn btn-primary">Primary BUtton</button>
-  <button class="btn btn-secondary">Secondary</button>
+  <?php include 'header.php'; ?>
 </body>
 
 </html>

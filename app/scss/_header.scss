@@ -1,0 +1,57 @@
+#header-top-bar {
+  background-color: $model-dark-blue;
+  padding: 10px 50px;
+  color: $white;
+  font-size: 14px;
+
+  @include media-breakpoint-down(s) {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  @include media-breakpoint-down(m) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 12px;
+  }
+}
+
+.top-bar-contents {
+  @include media-breakpoint-down(xxl) {
+    max-width: 100% !important;
+  }
+}
+
+.header-hours, .header-phone {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+}
+
+.header-hours {
+  &:before {
+    background-image: url('../images/icon-clock-white.svg');
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.header-phone {
+  &:before {
+    background-image: url('../images/icon-phone-white.svg');
+    width: 14px;
+    height: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}

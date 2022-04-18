@@ -1,0 +1,16 @@
+.btn {
+  box-shadow: 2px 2px rgba(0,0,0,0.16);
+  font-family: "Inter-Bold";
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/icon-caret-right-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7px;
+    height: 11px;
+    margin-left: 10px;
+  }
+}
