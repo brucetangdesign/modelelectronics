@@ -4,6 +4,10 @@
   src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("fonts/Inter-Bold.woff") format("woff");
+}
+@font-face {
   font-family: "Inter-Bold";
   src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("fonts/Inter-Bold.woff") format("woff");
 }
@@ -11146,20 +11150,37 @@ textarea.form-control-lg {
   margin-left: 10px;
 }
 
+#header {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.07);
+}
+
 #header-top-bar {
   background-color: #002050;
   padding: 10px 50px;
   color: #fff;
   font-size: 14px;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 12px;
+}
+@media (max-width: 991.98px) {
+  #header-top-bar {
+    padding-left: 36px;
+    padding-right: 36px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 767.98px) {
+  #header-top-bar {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  #header-top-bar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 1399.98px) {
-  .top-bar-contents {
+  .top-bar-contents, .header-logo-and-nav-contents {
     max-width: 100% !important;
   }
 }
@@ -11190,4 +11211,137 @@ textarea.form-control-lg {
 .header-phone a {
   text-decoration: none;
   color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .header-tagline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-hours-contact {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+#header-logo-and-nav {
+  padding: 37px 50px;
+}
+@media (max-width: 991.98px) {
+  #header-logo-and-nav {
+    padding: 30px 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  #header-logo-and-nav {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #site-identity {
+    width: 190px;
+    height: 53px;
+  }
+}
+@media (max-width: 991.98px) {
+  #site-identity {
+    width: 160px;
+    height: 45px;
+  }
+}
+@media (max-width: 575.98px) {
+  #site-identity {
+    width: 112px;
+    height: 31px;
+  }
+}
+@media screen and (max-width: 357px) {
+  #site-identity {
+    width: 95px;
+    height: 27px;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: #000;
+  font-family: "Inter-SemiBold";
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+@media (max-width: 1199.98px) {
+  .nav-link {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+  }
+}
+
+.navbar-toggler {
+  background-color: #fff;
+  background-image: url("../images/icon-menu-close.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  width: 49px;
+  height: 49px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) !important;
+}
+.navbar-toggler.collapsed {
+  background-image: url("../images/icon-hamburger.svg");
+}
+@media (max-width: 575.98px) {
+  .navbar-toggler {
+    width: 37px;
+    height: 37px;
+  }
+}
+@media screen and (max-width: 357px) {
+  .navbar-toggler {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#dealer-login-btn-mobile {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+@media (max-width: 575.98px) {
+  #dealer-login-btn-mobile {
+    font-size: 12px;
+    padding: 8px;
+  }
+  #dealer-login-btn-mobile:after {
+    width: 5px;
+    height: 9px;
+    margin-left: 3px;
+  }
+}
+@media screen and (max-width: 357px) {
+  #dealer-login-btn-mobile {
+    font-size: 11px;
+  }
+  #dealer-login-btn-mobile:after {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-collapse .navbar-nav {
+    border-top: 1px solid #dee2e6;
+    margin-top: 26px;
+    padding-top: 22px;
+  }
+  .navbar-expand-lg .navbar-collapse .nav-link {
+    font-size: 20px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
