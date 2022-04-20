@@ -130,16 +130,18 @@
 .navbar-toggler {
   background-color: $white;
   background-image: url('../images/icon-menu-close.svg');
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
   width: 49px;
   height: 49px;
   box-shadow: 0 0 6px rgba(0,0,0,0.2) !important;
+  transition: background-size 0.2s $easeOutBack;
 
   &.collapsed {
     background-image: url('../images/icon-hamburger.svg');
+    background-size: 60%;
   }
 
   @include media-breakpoint-down(sm) {

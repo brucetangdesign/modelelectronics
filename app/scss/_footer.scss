@@ -1,0 +1,84 @@
+#footer-contents {
+  background-color: $black;
+  padding: 45px 50px;
+  color: $white;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+footer {
+  .nav-link {
+    color: $white;
+    font-size: 15px;
+
+    &:hover, &:focus {
+      color: $gray-500;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .navbar-nav {
+      flex-direction: row;
+    }
+  }
+}
+
+.footer-logo-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+.footer-business-info {
+  >div {
+    margin-bottom: 20px;
+  
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.business-info-container {
+  display: flex;
+}
+
+.business-info-icon {
+  width: 17px;
+  min-height: 24px;
+  padding-top: 3px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 4px;
+}
+
+.business-info-copy {
+  padding-left: 9px;
+  font-size: 14px;
+}
+
+.business-info-icon--location {
+  background-image: url('../images/icon-location-white.svg');
+}
+
+.business-info-icon--phone {
+  background-image: url('../images/icon-phone-white.svg');
+}
+
+.business-info-icon--hours {
+  background-image: url('../images/icon-clock-white.svg');
+}

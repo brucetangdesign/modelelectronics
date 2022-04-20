@@ -11150,6 +11150,10 @@ textarea.form-control-lg {
   margin-left: 10px;
 }
 
+.btn-dark {
+  background-color: #000;
+}
+
 #header {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.07);
 }
@@ -11285,16 +11289,18 @@ textarea.form-control-lg {
 .navbar-toggler {
   background-color: #fff;
   background-image: url("../images/icon-menu-close.svg");
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
   width: 49px;
   height: 49px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) !important;
+  transition: background-size 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .navbar-toggler.collapsed {
   background-image: url("../images/icon-hamburger.svg");
+  background-size: 60%;
 }
 @media (max-width: 575.98px) {
   .navbar-toggler {
@@ -11344,4 +11350,82 @@ textarea.form-control-lg {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+#footer-contents {
+  background-color: #000;
+  padding: 45px 50px;
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  #footer-contents {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  #footer-contents {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+footer .nav-link {
+  color: #fff;
+  font-size: 15px;
+}
+footer .nav-link:hover, footer .nav-link:focus {
+  color: #adb5bd;
+}
+@media (min-width: 992px) {
+  footer .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+.footer-logo-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo-nav .btn {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+.footer-business-info > div {
+  margin-bottom: 20px;
+}
+.footer-business-info > div:last-of-type {
+  margin-bottom: 0;
+}
+
+.business-info-container {
+  display: flex;
+}
+
+.business-info-icon {
+  width: 17px;
+  min-height: 24px;
+  padding-top: 3px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 4px;
+}
+
+.business-info-copy {
+  padding-left: 9px;
+  font-size: 14px;
+}
+
+.business-info-icon--location {
+  background-image: url("../images/icon-location-white.svg");
+}
+
+.business-info-icon--phone {
+  background-image: url("../images/icon-phone-white.svg");
+}
+
+.business-info-icon--hours {
+  background-image: url("../images/icon-clock-white.svg");
 }
