@@ -11357,10 +11357,16 @@ textarea.form-control-lg {
   padding: 45px 50px;
   color: #fff;
 }
+#footer-contents > .container {
+  max-width: 100%;
+}
 @media (max-width: 991.98px) {
   #footer-contents {
     padding-left: 36px;
     padding-right: 36px;
+  }
+  #footer-contents > .container > * {
+    flex: 1;
   }
 }
 @media (max-width: 575.98px) {
@@ -11380,6 +11386,32 @@ footer .nav-link:hover, footer .nav-link:focus {
 @media (min-width: 992px) {
   footer .navbar-nav {
     flex-direction: row;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .nav-item {
+    text-align: center;
+  }
+  footer .nav-link {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #footer-site-identity {
+    width: 132px;
+    height: 37px;
+  }
+}
+
+.footer-awards {
+  text-align: right;
+}
+@media (max-width: 991.98px) {
+  .footer-awards > img {
+    width: 67px;
+    height: 149px;
   }
 }
 
@@ -11428,4 +11460,27 @@ footer .nav-link:hover, footer .nav-link:focus {
 
 .business-info-icon--hours {
   background-image: url("../images/icon-clock-white.svg");
+}
+
+@media screen and (max-width: 680px) {
+  #footer-contents > .container {
+    flex-wrap: wrap;
+  }
+  #footer-contents > .container > * {
+    flex: unset;
+  }
+
+  .footer-logo-nav {
+    width: 100%;
+    order: 1;
+    margin-bottom: 60px;
+  }
+
+  .footer-business-info {
+    order: 2;
+  }
+
+  .footer-awards {
+    order: 3;
+  }
 }
