@@ -1,8 +1,14 @@
 .btn {
   box-shadow: 2px 2px rgba(0,0,0,0.16);
   font-family: "Inter-Bold";
-  text-transform: uppercase;
+  font-size: 1.11rem;
+}
 
+.btn-dark {
+  background-color: $black;
+}
+
+.btn-with-caret{
   &:after {
     content: '';
     display: inline-block;
@@ -13,8 +19,4 @@
     height: 11px;
     margin-left: 10px;
   }
-}
-
-.btn-dark {
-  background-color: $black;
 }

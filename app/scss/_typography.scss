@@ -1,0 +1,36 @@
+h2, .title-large {
+  font-size: 56px;
+  font-family: "Inter-ExtraBold";
+  line-height: 1.1;
+  color: $secondary;
+
+  &:before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 69px;
+    height: 4px;
+    background-color: $primary;
+    margin-bottom: 16px;
+  }
+
+  @include media-breakpoint-down (xxl) {
+    font-size: 50px;
+  }
+
+  @include media-breakpoint-down (xl) {
+    font-size: 44px;
+  }
+
+  @include media-breakpoint-down (lg) {
+    font-size: 40px;
+  }
+
+  @include media-breakpoint-down (md) {
+    font-size: 36px;
+  }
+
+  @include media-breakpoint-down (sm) {
+    font-size: 32px;
+  }
+}

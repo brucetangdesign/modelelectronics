@@ -3,15 +3,12 @@
   padding: 45px 50px;
   color: $white;
 
-  > .container {
-    max-width: 100%;
-  }
-
   @include media-breakpoint-down(lg) {
     padding-left: 36px;
     padding-right: 36px;
 
     >.container {
+      max-width: 100%;
       >* {
         flex: 1;
       }

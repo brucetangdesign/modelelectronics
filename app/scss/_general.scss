@@ -1,0 +1,83 @@
+.container-thin {
+  max-width: 1200px;
+}
+
+.children-100 {
+  > * {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.img-with-text-cols-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 50px;
+
+  > * {
+    width: 100%;
+
+    @include media-breakpoint-up (md) {
+      width: 50%;
+    }
+  }
+  
+  .content-container {
+    padding-left: 60px;
+  
+    @include media-breakpoint-down (xl) {
+      padding-left: 45px;
+    }
+  
+    @include media-breakpoint-down (lg) {
+      padding-left: 40px;
+    }
+
+    @include media-breakpoint-down (md) {
+      padding-left: 0;
+      margin-top: 36px;
+    }
+  }
+
+  @include media-breakpoint-down (xxl) {
+    max-width: 100% !important;
+  }
+
+  @include media-breakpoint-down (lg) {
+    padding: 65px 36px;
+  }
+
+  @include media-breakpoint-down (sm) {
+    padding: 56px 30px;
+  }
+}
+
+
+//Carousel
+.carousel-indicators {
+  margin-bottom: 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #CBCBCB;
+  background-clip: padding-box;
+  border: 1px solid $white;
+  border-radius: 50px;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: $primary;
+}

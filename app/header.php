@@ -15,7 +15,7 @@
           <button class="navbar-toggler collapsed me-2 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"></button>
           <img id="site-identity" src="images/logo-model-electronics.svg" width="226px" height="63px" alt="Model Electronics Logo">
         </div>
-        <a id="dealer-login-btn-mobile" class="btn btn-primary text-white d-lg-none" href="#" >Dealer Login</a>
+        <a id="dealer-login-btn-mobile" class="btn btn-primary btn-with-caret text-uppercase text-white d-lg-none" href="#" >Dealer Login</a>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -31,7 +31,7 @@
               <a class="nav-link" href="#" >Aftermarket Products</a>
             </li>
             <li class="nav-item ms-2 d-none d-lg-block">
-              <a class="nav-link btn btn-primary text-white" href="#" >Dealer Login</a>
+              <a class="nav-link btn btn-primary btn-with-caret text-uppercase text-white" href="#" >Dealer Login</a>
             </li>
           </ul>
         </div>

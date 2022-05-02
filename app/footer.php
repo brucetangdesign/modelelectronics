@@ -33,7 +33,7 @@
             </li>
           </ul>
         </nav>
-        <a class="btn btn-dark border-white shadow-none" href="#" >Dealer Login</a>
+        <a class="btn btn-dark btn-with-caret text-uppercase border-white shadow-none" href="#" >Dealer Login</a>
       </div>
       <div class="footer-awards">
         <img src="images/top-workplaces-badge.png" width="81px" height="178.5px" alt="NJ.com Top Workplaces 2019 Badge">
