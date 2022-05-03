@@ -184,9 +184,171 @@
 //News
 #news {
   background-color: $model-light-blue;
+
   picture {
     position: relative;
     display: block;
     box-shadow: 10px 10px 0 $secondary;
+  }
+}
+
+//Trusted Partner
+#trusted-partner {
+  position: relative;
+  padding: 200px 50px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    background-image: url('../images/circuit-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    @include media-breakpoint-up(xxl) {
+      opacity: 0.5;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      opacity: 1;
+      background-position: top right;
+      background-size: 80vw;      
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    padding: 140px 50px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 100px 36px;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    padding: 50px 30px;
+  }
+}
+
+#partner-badges {
+  > .row > div {
+    max-width: 140px;
+  }
+}
+
+.partner-badge {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.partner-badge-content {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter-ExtraBold';
+  color: $white;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: $black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+
+
+  span {
+    z-index: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    opacity: 0.3;
+    top: 0;
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255, 255, 255, 0));
+    z-index: 0;
+  }
+
+  .gm & {
+    background-color: #194390;
+  }
+
+  .nissan & {
+    background-color: #C3002F;
+  }
+
+  .aptiv & {
+    background-color: #070707;
+  }
+
+  .ford & {
+    background-image: linear-gradient(#1B8CC5, #01123D);
+
+    &:before {
+      opacity: 0;
+    }
+  }
+
+  .infinit & {
+    background-color: #000000;
+  }
+
+  .kia & {
+    background-color: #C3002F;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+//Outstanding Reputation
+#reputation {
+  background-color: $model-light-blue;
+}
+
+//Contact
+#contact-cta {
+  padding: 70px 50px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 60px 36px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 30px;
+  }
+}
+
+.contact-cta-hours,
+.contact-cta-phone {
+  color: $secondary;
+  
+  a {
+    color: $secondary;
   }
 }

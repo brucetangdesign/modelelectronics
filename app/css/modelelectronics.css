@@ -15,6 +15,45 @@
   font-family: "Inter-ExtraBold";
   src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
 }
+@font-face {
+  font-family: "Model-Icons";
+  src: url("../fonts/model-icons.woff") format("woff2");
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "Model-Icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-model-location:before {
+  content: "";
+  color: inherit;
+}
+
+.icon-model-caret-right:before {
+  content: "";
+  color: inherit;
+}
+
+.icon-model-phone:before {
+  content: "";
+  color: inherit;
+}
+
+.icon-model-clock:before {
+  content: "";
+  color: inherit;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -68,7 +107,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-root-font-size: 18px;
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Inter-Regular, sans;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -5666,7 +5705,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Inter-Regular", sans;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5768,7 +5807,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Inter-Regular", sans;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11261,13 +11300,10 @@ h3, .h3 {
 }
 
 .btn-with-caret:after {
-  content: "";
-  display: inline-block;
-  background-image: url("../images/icon-caret-right-white.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 7px;
-  height: 11px;
+  font-family: "Model-Icons";
+  content: "";
+  display: inline;
+  font-size: 0.8em;
   margin-left: 10px;
 }
 
@@ -11310,28 +11346,10 @@ h3, .h3 {
   display: flex;
   align-items: center;
 }
-.header-hours:before, .header-phone:before {
-  content: "";
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 7px;
-}
-
-.header-hours:before {
-  background-image: url("../images/icon-clock-white.svg");
-  width: 17px;
-  height: 17px;
-}
-
-.header-phone:before {
-  background-image: url("../images/icon-phone-white.svg");
-  width: 14px;
-  height: 14px;
-}
-.header-phone a {
-  text-decoration: none;
-  color: #fff;
+.header-hours [class^=icon-],
+.header-hours [class*=" icon-"], .header-phone [class^=icon-],
+.header-phone [class*=" icon-"] {
+  font-size: 1.1em;
 }
 
 @media screen and (max-width: 700px) {
@@ -11552,15 +11570,23 @@ footer .nav-link:hover, footer .nav-link:focus {
 
 .business-info-container {
   display: flex;
+  align-items: flex-start;
+}
+.business-info-container .icon-model-location {
+  font-size: 1.2em;
+  padding-top: 3px;
+}
+.business-info-container .icon-model-phone {
+  padding-top: 3px;
+}
+.business-info-container .icon-model-clock {
+  padding-top: 1px;
 }
 
-.business-info-icon {
+[class^=icon-],
+[class*=" icon-"] {
   width: 17px;
-  min-height: 24px;
-  padding-top: 3px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 4px;
+  text-align: center;
 }
 
 .business-info-copy {
@@ -11568,19 +11594,7 @@ footer .nav-link:hover, footer .nav-link:focus {
   font-size: 14px;
 }
 
-.business-info-icon--location {
-  background-image: url("../images/icon-location-white.svg");
-}
-
-.business-info-icon--phone {
-  background-image: url("../images/icon-phone-white.svg");
-}
-
-.business-info-icon--hours {
-  background-image: url("../images/icon-clock-white.svg");
-}
-
-@media screen and (max-width: 680px) {
+@media (max-width: 991.98px) {
   #footer-contents > .container {
     flex-wrap: wrap;
   }
@@ -11602,6 +11616,12 @@ footer .nav-link:hover, footer .nav-link:focus {
     order: 3;
   }
 }
+@media (min-width: 992px) {
+  .footer-business-info, .footer-awards {
+    width: 25%;
+  }
+}
+
 .container-thin {
   max-width: 1200px;
 }
@@ -11700,12 +11720,12 @@ footer .nav-link:hover, footer .nav-link:focus {
 .img-with-text-cols-section > .container > * {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .img-with-text-cols-section > .container > * {
     width: 50%;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .img-with-text-cols-section.img-right > .container {
     flex-direction: column-reverse;
   }
@@ -11718,12 +11738,6 @@ footer .nav-link:hover, footer .nav-link:focus {
   .img-with-text-cols-section.img-right .content-container {
     padding-left: 0;
     padding-right: 45px;
-  }
-}
-@media (max-width: 991.98px) {
-  .img-with-text-cols-section.img-right .content-container {
-    padding-left: 0;
-    padding-right: 40px;
   }
 }
 .img-with-text-cols-section .content-container {
@@ -11739,17 +11753,12 @@ footer .nav-link:hover, footer .nav-link:focus {
     padding-left: 45px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .img-with-text-cols-section .content-container {
     justify-content: center;
   }
 }
 @media (max-width: 991.98px) {
-  .img-with-text-cols-section .content-container {
-    padding-left: 40px;
-  }
-}
-@media (max-width: 767.98px) {
   .img-with-text-cols-section .content-container {
     padding-right: 0;
     padding-left: 0;
@@ -11993,4 +12002,158 @@ footer .nav-link:hover, footer .nav-link:focus {
   position: relative;
   display: block;
   box-shadow: 10px 10px 0 #0041A3;
+}
+
+#trusted-partner {
+  position: relative;
+  padding: 200px 50px;
+}
+#trusted-partner:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
+  background-image: url("../images/circuit-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+@media (min-width: 1400px) {
+  #trusted-partner:before {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 767.98px) {
+  #trusted-partner:before {
+    width: 100%;
+    opacity: 1;
+    background-position: top right;
+    background-size: 80vw;
+  }
+}
+@media (max-width: 1399.98px) {
+  #trusted-partner {
+    padding: 140px 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  #trusted-partner {
+    padding: 100px 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  #trusted-partner {
+    padding: 50px 30px;
+  }
+}
+
+#partner-badges > .row > div {
+  max-width: 140px;
+}
+
+.partner-badge {
+  position: relative;
+}
+.partner-badge:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.partner-badge-content {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-ExtraBold";
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.partner-badge-content span {
+  z-index: 1;
+}
+.partner-badge-content:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  opacity: 0.3;
+  top: 0;
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+  z-index: 0;
+}
+.gm .partner-badge-content {
+  background-color: #194390;
+}
+.nissan .partner-badge-content {
+  background-color: #C3002F;
+}
+.aptiv .partner-badge-content {
+  background-color: #070707;
+}
+.ford .partner-badge-content {
+  background-image: linear-gradient(#1B8CC5, #01123D);
+}
+.ford .partner-badge-content:before {
+  opacity: 0;
+}
+.infinit .partner-badge-content {
+  background-color: #000000;
+}
+.kia .partner-badge-content {
+  background-color: #C3002F;
+}
+@media (max-width: 991.98px) {
+  .partner-badge-content {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  .partner-badge-content {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .partner-badge-content {
+    font-size: 14px;
+  }
+}
+
+#reputation {
+  background-color: #F0F4FA;
+}
+
+#contact-cta {
+  padding: 70px 50px;
+}
+@media (max-width: 991.98px) {
+  #contact-cta {
+    padding: 60px 36px;
+  }
+}
+@media (max-width: 767.98px) {
+  #contact-cta {
+    padding: 50px 30px;
+  }
+}
+
+.contact-cta-hours,
+.contact-cta-phone {
+  color: #0041A3;
+}
+.contact-cta-hours a,
+.contact-cta-phone a {
+  color: #0041A3;
 }

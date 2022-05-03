@@ -33,34 +33,10 @@
 .header-hours, .header-phone {
   display: flex;
   align-items: center;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 7px;
-  }
-}
-
-.header-hours {
-  &:before {
-    background-image: url('../images/icon-clock-white.svg');
-    width: 17px;
-    height: 17px;
-  }
-}
-
-.header-phone {
-  &:before {
-    background-image: url('../images/icon-phone-white.svg');
-    width: 14px;
-    height: 14px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $white;
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    font-size: 1.1em;  
   }
 }
 

@@ -10,13 +10,10 @@
 
 .btn-with-caret{
   &:after {
-    content: '';
-    display: inline-block;
-    background-image: url('../images/icon-caret-right-white.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 7px;
-    height: 11px;
+    font-family: "Model-Icons";
+    content: '\e901';
+    display: inline;
+    font-size: 0.8em;
     margin-left: 10px;
   }
 }

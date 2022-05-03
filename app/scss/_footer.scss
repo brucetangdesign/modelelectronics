@@ -90,16 +90,26 @@ footer {
 
 .business-info-container {
   display: flex;
+  align-items: flex-start;
+
+  .icon-model-location {
+    font-size: 1.2em;
+    padding-top: 3px;
+  }
+
+  .icon-model-phone {
+    padding-top: 3px;
+  }
+
+  .icon-model-clock {
+    padding-top: 1px;
+  }
 }
 
-.business-info-icon {
+[class^="icon-"],
+[class*=" icon-"] {
   width: 17px;
-  min-height: 24px;
-  padding-top: 3px;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 4px;
+  text-align: center;
 }
 
 .business-info-copy {
@@ -107,19 +117,7 @@ footer {
   font-size: 14px;
 }
 
-.business-info-icon--location {
-  background-image: url('../images/icon-location-white.svg');
-}
-
-.business-info-icon--phone {
-  background-image: url('../images/icon-phone-white.svg');
-}
-
-.business-info-icon--hours {
-  background-image: url('../images/icon-clock-white.svg');
-}
-
-@media screen and (max-width: 680px) {
+@include media-breakpoint-down(lg) {
   #footer-contents > .container {
     flex-wrap: wrap;
 
@@ -140,5 +138,11 @@ footer {
 
   .footer-awards {
     order: 3;
+  }
+}
+
+.footer-business-info, .footer-awards {
+  @include media-breakpoint-up(lg) {
+    width: 25%;
   }
 }

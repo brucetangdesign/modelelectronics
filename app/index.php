@@ -66,9 +66,9 @@
         </picture>
       </div>
       <div class="content-container">
-        <h2>Serving the Automotive Industry For Over 40 Years</h2>
+        <h2 class="mb-3">Serving the Automotive Industry For Over 40 Years</h2>
         <p>Model Electronics has grown to become one of the largest premier service centers for OEM and aftermarket customers. We specialize in the repair, remanufacturing, sales and distribution of factory-installed automotive electronics including radios, instrument clusters, navigation, and video.</p>
-        <a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a>
+        <div><a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a></div>
       </div>
     </div>
   </section>
@@ -123,6 +123,103 @@
     </div>
   </section>
   <!-- End News -->
+  <!-- Trusted Partner -->
+  <section id="trusted-partner" class="img-with-text-cols-section img-right">
+    <div class="container container-thin">
+      <div class="content-container">
+        <h2>A Trusted Partner</h2>
+        <p>Model Electronics is a trusted partner for leading automotive brands and is proud to be the largest premier service centers for OEM and aftermarket customers.</p>
+      </div>
+      <div id="partner-badges">
+        <div class="row justify-content-around justify-content-lg-center">
+          <div class="col-4 ps-0 pe-2">
+            <div class="partner-badge gm">
+              <div class="partner-badge-content">
+                <span>GM</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 ps-1 pe-1">
+            <div class="partner-badge nissan">
+              <div class="partner-badge-content">
+                <span>Nissan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 ps-2 pe-0">
+            <div class="partner-badge aptiv">
+              <div class="partner-badge-content">
+                <span>Aptiv</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-around justify-content-lg-center mt-4">
+          <div class="col-4 ps-0 pe-2">
+            <div class="partner-badge ford">
+              <div class="partner-badge-content">
+                <span>Ford</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 ps-1 pe-1">
+            <div class="partner-badge infiniti">
+              <div class="partner-badge-content">
+                <span>Infiniti</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 ps-2 pe-0">
+            <div class="partner-badge kia">
+              <div class="partner-badge-content">
+                <span>Kia</span>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <!-- End Trusted Partner -->
+  <!-- Reputation -->
+  <section id="reputation" class="img-with-text-cols-section">
+    <div class="container">
+      <div>
+        <picture class="children-100">
+          <source srcset="images/model-electronics-outstanding-repuatation-ISO-certified.webp, images/model-electronics-outstanding-repuatation-ISO-certified@2x.webp 2x" width="728px" height="578px" type="image/webp" alt="Serving the Automotive Industry For Over 40 Years">
+          <source srcset="images/model-electronics-outstanding-repuatation-ISO-certified.jpg, images/model-electronics-outstanding-repuatation-ISO-certified@2x.jpg 2x" width="728px" height="578px" type="image/jpeg" alt="Serving the Automotive Industry For Over 40 Years"> 
+          <img src="images/model-electronics-outstanding-repuatation-ISO-certified.jpg" width="728px" height="528px" alt="Serving the Automotive Industry For Over 40 Years">
+        </picture>
+      </div>
+      <div class="content-container">
+        <h2 class="mb-3">Outstanding Reputation</h2>
+        <p>Model Electronics operates in full certified compliance with the standards for ISO 9001: 2015, and ISO 14001: 2015. Our Quality Management System encompasses the remanufacturing and/or repair of audio, video, instrument and display products (setting mileage and/or remanufacture), assembly of Passive Occupancy Detection System (PODS), OEM vehicle systems testing for the automotive industry.</p>
+        <div class="d-flex mt-3 flex-column flex-sm-row">
+          <div class="pe-0 pe-sm-4 text-center">
+            <img class="w-lg-100 h-auto mw-100" src="images/NSF-badge@2x.png" alt="NSF-ISR Badge" width="84px" height="104px">
+          </div>
+          <div class="ps-0 pe-0 ps-sm-2 pe-sm-2 mt-3 mb-3 mt-sm-0 mb-sm-0 text-center">
+            <img src="images/iso-9001-badge.svg" alt="ISO 9001 Certified Badge" width="126px" height="50px">
+          </div>
+          <div class="ps-0 ps-sm-4 mt-3 mt-sm-0 text-center">
+            <img src="images/iso-14001-badge.svg" alt="ISO 14001 Certified Badge" width="126px" height="50px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Reputation -->
+  <!-- Contact -->
+  <section id="contact-cta">
+    <div class="container text-center">
+      <h2 class="text-center">Get in Touch</h2>
+      <p class="large-p">Fast, reliable, customer service is our #1 priority.</p>
+      <p class="contact-cta-hours d-inline-flex align-items-center mb-1"><span class="icon-model-clock me-2"></span>Open 8AM - 8PM EST</p>
+      <br>
+      <p class="contact-cta-phone d-inline-flex align-items-center"><span class="icon-model-phone me-2"></span><span>Call toll-free <a href="tel:800-433-9657">(800)-433-9657</a></span></p>
+    </div>
+  </section>
+  <!-- End Contact -->
   </main>
   <?php include 'footer.php'; ?>
   <!-- JavaScript Bundle with Popper -->

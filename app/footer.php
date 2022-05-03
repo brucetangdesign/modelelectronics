@@ -3,15 +3,15 @@
     <div class="container p-0 d-flex justify-content-between m-auto">
       <div class="footer-business-info">
         <div class="business-info-container">
-          <div class="business-info-icon business-info-icon--location"></div>
+          <div class="icon-model-location"></div>
           <div class="business-info-copy">Model Electronics<br>615 East Crescent Ave.<br>Ramsey, NJ 07446</div>
         </div>
         <div class="business-info-container">
-          <div class="business-info-icon business-info-icon--phone"></div>
+          <div class="icon-model-phone"></div>
           <div class="business-info-copy">(800)-433-9657<br>(201)-961-6200</div>
         </div>
         <div class="business-info-container">
-          <div class="business-info-icon business-info-icon--hours"></div>
+          <div class="icon-model-clock"></div>
           <div class="business-info-copy">8AM - 8PM EST</div>
         </div>
       </div>

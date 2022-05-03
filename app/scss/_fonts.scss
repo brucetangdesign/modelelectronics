@@ -21,3 +21,44 @@
   src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
     url('../fonts/Inter-ExtraBold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Model-Icons';
+  src: url('../fonts/model-icons.woff') format('woff2')
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Model-Icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-model-location:before {
+  content: "\e900";
+  color: inherit;
+}
+
+.icon-model-caret-right:before {
+  content: "\e901";
+  color: inherit;
+}
+
+.icon-model-phone:before {
+  content: "\e902";
+  color: inherit;
+}
+
+.icon-model-clock:before {
+  content: "\e903";
+  color: inherit;
+}

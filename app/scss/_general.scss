@@ -109,14 +109,14 @@
     >* {
       width: 100%;
     
-      @include media-breakpoint-up (md) {
+      @include media-breakpoint-up (lg) {
         width: 50%;
       }
     }
   }
 
   &.img-right {
-    @include media-breakpoint-down (md) {
+    @include media-breakpoint-down (lg) {
       >.container {
         flex-direction: column-reverse;
       }
@@ -129,11 +129,6 @@
       @include media-breakpoint-down (xl) {
         padding-left: 0;
         padding-right: 45px;
-      }
-    
-      @include media-breakpoint-down (lg) {
-        padding-left: 0;
-        padding-right: 40px;
       }
     }
   }
@@ -152,15 +147,11 @@
       padding-left: 45px;
     }
 
-    @include media-breakpoint-up (lg) {
+    @include media-breakpoint-up (md) {
       justify-content: center;
     }
-  
-    @include media-breakpoint-down (lg) {
-      padding-left: 40px;
-    }
 
-    @include media-breakpoint-down (md) {
+    @include media-breakpoint-down (lg) {
       padding-right: 0;
       padding-left: 0;
       margin-top: 36px;
