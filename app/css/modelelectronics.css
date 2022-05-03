@@ -11153,6 +11153,10 @@ h2:before, .h2:before, .title-large:before {
   background-color: #C40000;
   margin-bottom: 16px;
 }
+h2.text-center:before, .text-center.h2:before, .title-large.text-center:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (max-width: 1399.98px) {
   h2, .h2, .title-large {
     font-size: 50px;
@@ -11541,6 +11545,35 @@ footer .nav-link:hover, footer .nav-link:focus {
   height: auto;
 }
 
+.large-p {
+  font-size: 24px;
+}
+@media (max-width: 767.98px) {
+  .large-p {
+    font-size: 21px;
+  }
+}
+
+.checklist {
+  text-align: left !important;
+  list-style-type: none;
+  padding-left: 0;
+}
+.checklist li {
+  padding: 5px 0;
+}
+.checklist li:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/icon-check-blue.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 13px;
+  margin-right: 9px;
+}
+
 .img-with-text-cols-section {
   display: flex;
   justify-content: center;
@@ -11759,5 +11792,46 @@ footer .nav-link:hover, footer .nav-link:focus {
   }
   .model-difference-bar .item img {
     max-height: 30px;
+  }
+}
+
+#model-services {
+  padding: 100px 50px;
+  background-image: url("../images/model-electronics-services@2x.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+#model-services > .container {
+  max-width: 816px;
+}
+@media (min-width: 1400px) {
+  #model-services {
+    min-height: 857px;
+  }
+}
+@media (max-width: 991.98px) {
+  #model-services {
+    padding: 80px 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  #model-services {
+    padding: 50px 30px;
+  }
+}
+#model-services .checklist {
+  font-family: Inter-SemiBold;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  #model-services .checklist {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  #model-services .checklist {
+    max-width: 350px;
+    margin: auto;
   }
 }

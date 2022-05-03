@@ -140,3 +140,42 @@
     }
   }
 }
+
+//Model Services
+#model-services {
+  padding: 100px 50px;
+  background-image: url('../images/model-electronics-services@2x.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  > .container {
+    max-width: 816px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    min-height: 857px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 80px 36px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 50px 30px;
+  }
+
+  .checklist {
+    font-family: Inter-SemiBold;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 350px;
+      margin: auto;
+    }
+  }
+}

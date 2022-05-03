@@ -70,7 +70,39 @@
       <a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a>
     </div>
   </section>
-  <!-- End Serving the AUtomotive Industry -->
+  <!-- End Serving the Automotive Industry -->
+  <!-- Model Services -->
+  <section id="model-services" class="container-fluid d-flex align-items-center">
+    <div class="container text-center">
+      <h2 class="text-white text-center">Model Services</h2>
+      <p class="large-p text-center text-white mt-3">We provide our customers with a realized savings in inventory and quality control and labor, plus improved vehicle downtime for the consumer.</p>
+      <div class="row text-white mt-4">
+        <div class="col-12 col-md-6 ps-0 pe-0 pe-md-4">
+         <ul class="checklist">
+          <li>Advanced exchange program</li>
+          <li>Calibration</li>
+          <li>Certification</li>
+          <li>Conversion</li>
+          <li>Distribution & Core Management</li>
+          <li>Quality Control</li>
+          <li>Remanufacturing</li>
+         </ul> 
+        </div>
+        <div class="col-12 col-md-6 ps-0  pe-0 ps-md-4">
+         <ul class="checklist">
+          <li>Repairs</li>
+          <li>OEM Sales</li>
+          <li>Re-Qualification</li>
+          <li>Testing & Validation</li>
+          <li>Upgrades & Exchanges</li>
+          <li>Warehousing / Logistics</li>
+         </ul> 
+        </div>
+      </div>
+      <a class="btn btn-primary mt-5 mt-lg-4" href="/services.php" role="button">View Our Servicess</a>
+    </div>
+  </section>
+  <!-- End Model Services -->
   </main>
   <?php include 'footer.php'; ?>
   <!-- JavaScript Bundle with Popper -->
