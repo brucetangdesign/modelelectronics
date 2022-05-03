@@ -84,7 +84,7 @@
   background-color: $black;
 
   .container {
-    padding: 32px 50px;
+    padding: 32px 0px;
 
     @include media-breakpoint-down (md) {
       padding: 30px 36px;
@@ -133,6 +133,7 @@
       font-size: 12px;
       border-left: 0;
       padding: 0 21px;
+      justify-content: center;
 
       img {
         max-height: 30px;
@@ -177,5 +178,15 @@
       max-width: 350px;
       margin: auto;
     }
+  }
+}
+
+//News
+#news {
+  background-color: $model-light-blue;
+  picture {
+    position: relative;
+    display: block;
+    box-shadow: 10px 10px 0 $secondary;
   }
 }

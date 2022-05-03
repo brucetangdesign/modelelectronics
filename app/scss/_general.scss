@@ -40,25 +40,120 @@
   }
 }
 
-.img-with-text-cols-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 80px 50px;
+.link-thick-underline {
+  position: relative;
+  text-decoration: none;
+  font-family: Inter-SemiBold;
 
-  > * {
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
     width: 100%;
+    height: 3px;
+    background-color: $primary;
+    top: 100%;
+    left: 0;
+  }
 
-    @include media-breakpoint-up (md) {
-      width: 50%;
+  &:hover {
+    &:after {
+      background-color: #9d0000;
     }
   }
+}
+
+.video-link {
+  position: relative;
+
+  picture {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/icon-play-white.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    picture {
+      filter: brightness(0.8);
+    }
+
+    &:after {
+      transform: translateX(-50%) translateY(-50%) scale(1.2);
+    }
+  }
+}
+
+.img-with-text-cols-section {
+  padding: 80px 50px;
+
+  > .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+    >* {
+      width: 100%;
+    
+      @include media-breakpoint-up (md) {
+        width: 50%;
+      }
+    }
+  }
+
+  &.img-right {
+    @include media-breakpoint-down (md) {
+      >.container {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .content-container {
+      padding-left: 0;
+      padding-right: 60px;
+    
+      @include media-breakpoint-down (xl) {
+        padding-left: 0;
+        padding-right: 45px;
+      }
+    
+      @include media-breakpoint-down (lg) {
+        padding-left: 0;
+        padding-right: 40px;
+      }
+    }
+  }
+
   
   .content-container {
+    display: flex;
+    flex-direction: column;
     padding-left: 60px;
+
+    a {
+      display: inline-flex;
+    }
   
     @include media-breakpoint-down (xl) {
       padding-left: 45px;
+    }
+
+    @include media-breakpoint-up (lg) {
+      justify-content: center;
     }
   
     @include media-breakpoint-down (lg) {
@@ -66,13 +161,16 @@
     }
 
     @include media-breakpoint-down (md) {
+      padding-right: 0;
       padding-left: 0;
       margin-top: 36px;
     }
   }
 
   @include media-breakpoint-down (xxl) {
-    max-width: 100% !important;
+    >.container {
+      max-width: 100% !important;
+    }
   }
 
   @include media-breakpoint-down (lg) {

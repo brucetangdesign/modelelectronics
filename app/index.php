@@ -36,11 +36,11 @@
   <!-- Icon Bar -->
   <section class="model-difference-bar">
     <div class="container container-thin row ms-auto me-auto">
-      <div class="col-6 col-sm-3 mb-5 mb-sm-0 item">
+      <div class="col-6 col-sm-3 mb-4 mb-sm-0 item">
         <img src="images/icon-truck-white.svg" width="93px" height="48px" alt="Fast Order Fulfillment Icon">
         <span>Fast Order<br>Fulfillment</span>
       </div>
-      <div class="col-6 col-sm-3 mb-5 mb-sm-0 item">
+      <div class="col-6 col-sm-3 mb-4 mb-sm-0 item">
         <img src="images/icon-clock-white.svg" width="48px" height="48px" alt="Hours Icon">
         <span>Open<br>8AM - 8PM EST</span>
       </div>
@@ -55,19 +55,21 @@
     </div>
   </section>
   <!-- End Icon Bar -->
-  <!-- Serving the AUtomotive Industry -->
-  <section id="serving-automotive-industry" class="container img-with-text-cols-section">
-    <div>
-      <picture class="children-100">
-        <source srcset="images/model-electronics-serving-the-automotive-industry.webp, images/model-electronics-serving-the-automotive-industry@2x.webp 2x" width="728px" height="578px" type="image/webp" alt="Serving the Automotive Industry For Over 40 Years">
-        <source srcset="images/model-electronics-serving-the-automotive-industry.jpg, images/model-electronics-serving-the-automotive-industry@2x.jpg 2x" width="728px" height="578px" type="image/jpeg" alt="Serving the Automotive Industry For Over 40 Years"> 
-        <img src="images/model-electronics-serving-the-automotive-industry.jpg" width="728px" height="528px" alt="Serving the Automotive Industry For Over 40 Years">
-      </picture>
-    </div>
-    <div class="content-container">
-      <h2>Serving the Automotive Industry For Over 40 Years</h2>
-      <p>Model Electronics has grown to become one of the largest premier service centers for OEM and aftermarket customers. We specialize in the repair, remanufacturing, sales and distribution of factory-installed automotive electronics including radios, instrument clusters, navigation, and video.</p>
-      <a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a>
+  <!-- Serving the Automotive Industry -->
+  <section id="serving-automotive-industry" class="img-with-text-cols-section">
+    <div class="container">
+      <div>
+        <picture class="children-100">
+          <source srcset="images/model-electronics-serving-the-automotive-industry.webp, images/model-electronics-serving-the-automotive-industry@2x.webp 2x" width="728px" height="578px" type="image/webp" alt="Serving the Automotive Industry For Over 40 Years">
+          <source srcset="images/model-electronics-serving-the-automotive-industry.jpg, images/model-electronics-serving-the-automotive-industry@2x.jpg 2x" width="728px" height="578px" type="image/jpeg" alt="Serving the Automotive Industry For Over 40 Years"> 
+          <img src="images/model-electronics-serving-the-automotive-industry.jpg" width="728px" height="528px" alt="Serving the Automotive Industry For Over 40 Years">
+        </picture>
+      </div>
+      <div class="content-container">
+        <h2>Serving the Automotive Industry For Over 40 Years</h2>
+        <p>Model Electronics has grown to become one of the largest premier service centers for OEM and aftermarket customers. We specialize in the repair, remanufacturing, sales and distribution of factory-installed automotive electronics including radios, instrument clusters, navigation, and video.</p>
+        <a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a>
+      </div>
     </div>
   </section>
   <!-- End Serving the Automotive Industry -->
@@ -103,6 +105,24 @@
     </div>
   </section>
   <!-- End Model Services -->
+  <!-- News -->
+  <section id="news" class="img-with-text-cols-section img-right">
+    <div class="container container-thin">
+      <div class="content-container">
+        <h3>Model Electronics at NASCAR</h3>
+        <p>The Model Electronics sponsored No. 17 Chevrolet Camaro closed out the 2021 NASCAR Xfinity Series season at Phoenix Raceway. Model Electronics was proud to partner with SS Greenlight Racing (SSGLR) and driver Joe Graf Jr.as the primary sponsor for the season finale. The sponsorship was a perfect fit because like Model Electronics, Joe Graf is a New Jersey native.</p>
+        <div><a class="link-thick-underline" href="#">Event Link</a></div>
+      </div>
+      <a href="#" class="video-link">
+        <picture class="children-100 video-img">
+          <source srcset="images/model-electronics-2021-NASCAR-Xfinity.webp, images/model-electronics-2021-NASCAR-Xfinity@2x.webp 2x" width="584px" height="437px" type="image/webp" alt="Model Electronics 2021 NASCAR Xfinity Series season at Phoenix Raceway">
+          <source srcset="images/model-electronics-2021-NASCAR-Xfinity.jpg, images/model-electronics-2021-NASCAR-Xfinityy@2x.jpg 2x" width="584px" height="437px" type="image/jpeg" alt="Model Electronics 2021 NASCAR Xfinity Series season at Phoenix Raceway"> 
+          <img src="images/model-electronics-2021-NASCAR-Xfinity.jpg" width="584px" height="437px" alt="Model Electronics 2021 NASCAR Xfinity Series season at Phoenix Raceway">
+        </picture>
+      </a>
+    </div>
+  </section>
+  <!-- End News -->
   </main>
   <?php include 'footer.php'; ?>
   <!-- JavaScript Bundle with Popper -->
