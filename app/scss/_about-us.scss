@@ -1,0 +1,19 @@
+#about-us-intro {
+  >.container {  
+    >* {
+      width: 100%;
+  
+      @include media-breakpoint-up (lg) {
+        width: auto;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    picture > * {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
