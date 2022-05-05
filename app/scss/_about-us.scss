@@ -17,3 +17,47 @@
     }
   }
 }
+
+#about-us-bonafides {
+  position: relative;
+  padding: 7.6vw 50px;
+  background-image: url('../images/model-electronics-competitively-priced-automotive-electronics@2x.webp');
+  background-size: cover;
+  background-position: top center;
+
+  h3.title-medium {
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      &:before {
+        transform: none !important;
+        left: 0 !important;
+      }
+    }
+  }
+
+  .bonafides-icon-container {
+    > img {
+      width: auto;
+      height: 60px;
+    }
+  }
+
+  @include media-breakpoint-down (lg) {
+    padding: 60px 36px;
+
+    .bonafides-icon-container > img {
+      height: 48px;
+    }
+  }
+
+  @include media-breakpoint-down (sm) {
+    padding: 45px 30px;
+
+    .bonafides-icon-container>img {
+      height: 38px;
+    }
+  }
+}

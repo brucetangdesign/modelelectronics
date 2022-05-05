@@ -12,8 +12,16 @@
   &:after {
     font-family: "Model-Icons";
     content: '\e901';
-    display: inline;
+    display: inline-block;
     font-size: 0.8em;
     margin-left: 10px;
+    animation-duration: 0.4s;
+    animation-timing-function: $easeOutQuad;
+  }
+
+  &:hover {
+    &:after {
+      animation-name: caretSlideFromLeft;
+    }
   }
 }

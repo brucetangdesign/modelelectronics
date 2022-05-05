@@ -54,6 +54,11 @@
   font-size: 80px;
   max-width: 760px;
   line-height: 1.1;
+  color: $white;
+
+  &:before, &:after {
+    display: none;
+  }
 
   @include media-breakpoint-down(xl) {
     font-size: 65px;
@@ -151,7 +156,13 @@
   background-position: top left;
 
   > .container {
-    max-width: 816px;
+    max-width: 900px;
+  }
+
+  .checklist-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include media-breakpoint-up(xxl) {

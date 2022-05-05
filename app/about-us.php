@@ -54,6 +54,35 @@
     </div>
   </section>
     <!-- End About Us -->
+    <!-- Bonafindes -->
+    <section id="about-us-bonafides">
+      <div class="container container-thin d-flex flex-column flex-lg-row p-0">
+        <div class="col-12 col-lg-4 text-white text-left text-lg-center p-0 p-lg-4 mb-4 mb-lg-0">
+          <div class="d-flex d-lg-block flex-row-reverse align-items-center justify-content-between">
+            <div class="mb-0 mb-lg-4 bonafides-icon-container"><img src="images/icon-lightbulb.svg" width="40" height="62"></div>
+            <h3 class="title-medium title-line-above text-lg-center text-white">Expertise in<br>the Field</h3>
+          </div>
+          <p class="small-p">Because our team of in-house engineers has over 100 years of combined experience with automotive electronics, we are able to react quickly and efficiently to failures in the field.</p>
+        </div>
+
+        <div class="col-12 col-lg-4 text-white text-left text-lg-center p-0 p-lg-4 mb-4 mb-lg-02">
+          <div class="d-flex d-lg-block flex-row-reverse align-items-center justify-content-between">
+            <div class="mb-0 mb-lg-4 bonafides-icon-container"><img src="images/icon-leaf.svg" width="49" height="65"></div>
+            <h3 class="title-medium title-line-above text-lg-center text-white">Environmental<br>Sustainability</h3>
+          </div>
+          <p class="small-p">Model Electronics conducts its operations in a manner that is environmentally responsible. We actively monitor and comply with environmental laws and regulations and manage all phases of business to minimize the impact of operations on the environment.</p>
+        </div>
+
+        <div class="col-12 col-lg-4 text-white text-left text-lg-center p-0 p-lg-4 mb-4 mb-lg-0">
+          <div class="d-flex d-lg-block flex-row-reverse align-items-center justify-content-between">
+            <div class="mb-0 mb-lg-4 bonafides-icon-container"><img src="images/icon-dollar.svg" width="30" height="58"></div>
+            <h3 class="title-medium title-line-above text-lg-center text-white">Affordability for<br>Our Customers</h3>
+          </div>
+          <p class="small-p">Competitively priced in all our services, Model Electronics allows the dealer network to maintain low levels of inventory working on a just-in-time philosophy, ordering the products when they need them.</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Bonafindes -->
   </main>
   <?php include 'footer.php'; ?>
   <!-- JavaScript Bundle with Popper -->

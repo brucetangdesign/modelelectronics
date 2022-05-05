@@ -1,9 +1,4 @@
-h2, .title-large {
-  font-size: 56px;
-  font-family: "Inter-ExtraBold";
-  line-height: 1.1;
-  color: $secondary;
-
+.title-line-above {
   &:before {
     content: '';
     position: relative;
@@ -14,12 +9,27 @@ h2, .title-large {
     margin-bottom: 16px;
   }
 
-  &.text-center {
+  &.text-center,
+  &.text-xs-center,
+  &.text-sm-center,
+  &.text-md-center,
+  &.text-lg-center,
+  &.text-xl-center,
+  &.text-xxl-center {
     &:before {
       left: 50%;
       transform: translateX(-50%);
     }
   }
+}
+
+h2, .title-large {
+  font-size: 56px;
+  font-family: "Inter-ExtraBold";
+  line-height: 1.1;
+  color: $secondary;
+
+  @extend .title-line-above;
 
   @include media-breakpoint-down (xxl) {
     font-size: 50px;
@@ -42,51 +52,7 @@ h2, .title-large {
   }
 }
 
-h2, .title-large {
-  font-size: 56px;
-  font-family: "Inter-ExtraBold";
-  line-height: 1.1;
-  color: $secondary;
-
-  &:before {
-    content: '';
-    position: relative;
-    display: block;
-    width: 69px;
-    height: 4px;
-    background-color: $primary;
-    margin-bottom: 16px;
-  }
-
-  &.text-center {
-    &:before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  @include media-breakpoint-down (xxl) {
-    font-size: 50px;
-  }
-
-  @include media-breakpoint-down (xl) {
-    font-size: 44px;
-  }
-
-  @include media-breakpoint-down (lg) {
-    font-size: 40px;
-  }
-
-  @include media-breakpoint-down (md) {
-    font-size: 36px;
-  }
-
-  @include media-breakpoint-down (sm) {
-    font-size: 32px;
-  }
-}
-
-h3 {
+h3, .title-medium {
   font-size: 36px;
   font-family: "Inter-SemiBold";
   line-height: 1.1;

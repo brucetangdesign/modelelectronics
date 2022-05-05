@@ -54,6 +54,14 @@
   color: inherit;
 }
 
+@keyframes caretSlideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11177,13 +11185,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h2, .h2, .title-large {
-  font-size: 56px;
-  font-family: "Inter-ExtraBold";
-  line-height: 1.1;
-  color: #0041A3;
-}
-h2:before, .h2:before, .title-large:before {
+.title-line-above:before, h2:before, .h2:before, .title-large:before {
   content: "";
   position: relative;
   display: block;
@@ -11192,9 +11194,16 @@ h2:before, .h2:before, .title-large:before {
   background-color: #C40000;
   margin-bottom: 16px;
 }
-h2.text-center:before, .text-center.h2:before, .title-large.text-center:before {
+.title-line-above.text-center:before, h2.text-center:before, .text-center.h2:before, .text-center.title-large:before, .title-line-above.text-xs-center:before, h2.text-xs-center:before, .text-xs-center.h2:before, .text-xs-center.title-large:before, .title-line-above.text-sm-center:before, h2.text-sm-center:before, .text-sm-center.h2:before, .text-sm-center.title-large:before, .title-line-above.text-md-center:before, h2.text-md-center:before, .text-md-center.h2:before, .text-md-center.title-large:before, .title-line-above.text-lg-center:before, h2.text-lg-center:before, .text-lg-center.h2:before, .text-lg-center.title-large:before, .title-line-above.text-xl-center:before, h2.text-xl-center:before, .text-xl-center.h2:before, .text-xl-center.title-large:before, .title-line-above.text-xxl-center:before, h2.text-xxl-center:before, .text-xxl-center.h2:before, .text-xxl-center.title-large:before {
   left: 50%;
   transform: translateX(-50%);
+}
+
+h2, .h2, .title-large {
+  font-size: 56px;
+  font-family: "Inter-ExtraBold";
+  line-height: 1.1;
+  color: #0041A3;
 }
 @media (max-width: 1399.98px) {
   h2, .h2, .title-large {
@@ -11222,69 +11231,24 @@ h2.text-center:before, .text-center.h2:before, .title-large.text-center:before {
   }
 }
 
-h2, .h2, .title-large {
-  font-size: 56px;
-  font-family: "Inter-ExtraBold";
-  line-height: 1.1;
-  color: #0041A3;
-}
-h2:before, .h2:before, .title-large:before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 69px;
-  height: 4px;
-  background-color: #C40000;
-  margin-bottom: 16px;
-}
-h2.text-center:before, .text-center.h2:before, .title-large.text-center:before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media (max-width: 1399.98px) {
-  h2, .h2, .title-large {
-    font-size: 50px;
-  }
-}
-@media (max-width: 1199.98px) {
-  h2, .h2, .title-large {
-    font-size: 44px;
-  }
-}
-@media (max-width: 991.98px) {
-  h2, .h2, .title-large {
-    font-size: 40px;
-  }
-}
-@media (max-width: 767.98px) {
-  h2, .h2, .title-large {
-    font-size: 36px;
-  }
-}
-@media (max-width: 575.98px) {
-  h2, .h2, .title-large {
-    font-size: 32px;
-  }
-}
-
-h3, .h3 {
+h3, .h3, .title-medium {
   font-size: 36px;
   font-family: "Inter-SemiBold";
   line-height: 1.1;
   color: #0041A3;
 }
 @media (max-width: 991.98px) {
-  h3, .h3 {
+  h3, .h3, .title-medium {
     font-size: 30px;
   }
 }
 @media (max-width: 767.98px) {
-  h3, .h3 {
+  h3, .h3, .title-medium {
     font-size: 28px;
   }
 }
 @media (max-width: 575.98px) {
-  h3, .h3 {
+  h3, .h3, .title-medium {
     font-size: 24px;
   }
 }
@@ -11302,9 +11266,14 @@ h3, .h3 {
 .btn-with-caret:after {
   font-family: "Model-Icons";
   content: "";
-  display: inline;
+  display: inline-block;
   font-size: 0.8em;
   margin-left: 10px;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+}
+.btn-with-caret:hover:after {
+  animation-name: caretSlideFromLeft;
 }
 
 #header {
@@ -11409,6 +11378,7 @@ h3, .h3 {
 }
 
 .nav-link {
+  position: relative;
   color: #000;
   font-family: "Inter-SemiBold";
   font-size: 16px;
@@ -11420,6 +11390,30 @@ h3, .h3 {
     padding-left: 11px !important;
     padding-right: 11px !important;
   }
+}
+
+#header-logo-and-nav .nav-link:not(.btn) > span {
+  position: relative;
+}
+#header-logo-and-nav .nav-link:not(.btn) > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  background-color: #C40000;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: all 0.13s cubic-bezier(0.11, 0, 0.5, 0);
+  margin-top: 3px;
+}
+#header-logo-and-nav .nav-link:hover {
+  color: #0041A3;
+}
+#header-logo-and-nav .nav-link:hover > span:after {
+  transform: scaleX(1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .navbar-toggler {
@@ -11626,6 +11620,12 @@ footer .nav-link:hover, footer .nav-link:focus {
   max-width: 1200px;
 }
 
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 .children-100 > * {
   width: 100%;
   max-width: 100%;
@@ -11641,6 +11641,10 @@ footer .nav-link:hover, footer .nav-link:focus {
   }
 }
 
+.small-p {
+  font-size: 16px;
+}
+
 .checklist {
   text-align: left !important;
   list-style-type: none;
@@ -11648,17 +11652,22 @@ footer .nav-link:hover, footer .nav-link:focus {
 }
 .checklist li {
   padding: 5px 0;
+  padding-left: 23px;
+  position: relative;
+  line-height: 1.2;
 }
 .checklist li:before {
   content: "";
-  display: inline-block;
+  top: 0.5em;
+  left: 0;
+  display: block;
+  position: absolute;
   background-image: url("../images/icon-check-blue.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 17px;
   height: 13px;
-  margin-right: 9px;
 }
 
 .link-thick-underline {
@@ -11873,6 +11882,22 @@ footer .nav-link:hover, footer .nav-link:focus {
   }
 }
 
+.has-overlay > * {
+  position: relative;
+  z-index: 1;
+}
+.has-overlay:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  z-index: 0;
+}
+
 #homepage-hero-carousel .carousel-item-content {
   padding: 100px 50px;
 }
@@ -11931,6 +11956,10 @@ footer .nav-link:hover, footer .nav-link:focus {
   font-size: 80px;
   max-width: 760px;
   line-height: 1.1;
+  color: #fff;
+}
+.homepage-hero-title:before, .homepage-hero-title:after {
+  display: none;
 }
 @media (max-width: 1199.98px) {
   .homepage-hero-title {
@@ -12028,7 +12057,12 @@ footer .nav-link:hover, footer .nav-link:focus {
   background-position: top left;
 }
 #model-services > .container {
-  max-width: 816px;
+  max-width: 900px;
+}
+#model-services .checklist-container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 1400px) {
   #model-services {
@@ -12237,5 +12271,44 @@ footer .nav-link:hover, footer .nav-link:focus {
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+}
+
+#about-us-bonafides {
+  position: relative;
+  padding: 7.6vw 50px;
+  background-image: url("../images/model-electronics-competitively-priced-automotive-electronics@2x.webp");
+  background-size: cover;
+  background-position: top center;
+}
+@media (min-width: 992px) {
+  #about-us-bonafides h3.title-medium, #about-us-bonafides .title-medium.h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 991.98px) {
+  #about-us-bonafides h3.title-medium:before, #about-us-bonafides .title-medium.h3:before {
+    transform: none !important;
+    left: 0 !important;
+  }
+}
+#about-us-bonafides .bonafides-icon-container > img {
+  width: auto;
+  height: 60px;
+}
+@media (max-width: 991.98px) {
+  #about-us-bonafides {
+    padding: 60px 36px;
+  }
+  #about-us-bonafides .bonafides-icon-container > img {
+    height: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  #about-us-bonafides {
+    padding: 45px 30px;
+  }
+  #about-us-bonafides .bonafides-icon-container > img {
+    height: 38px;
   }
 }

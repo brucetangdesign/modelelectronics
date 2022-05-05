@@ -25,7 +25,7 @@
           <div class="homepage-hero carousel-item-content">
             <div class="container container-thin p-0">
               <p class="homepage-hero-lead">The Model Difference</p>
-              <h1 class="homepage-hero-title">Fast, reliable, customer service is our #1 priority.</h1>
+              <h2 class="homepage-hero-title">Fast, reliable, customer service is our #1 priority.</h2>
               <a class="btn btn-primary btn-lg mt-4" href="/services.php" role="button">View Our Services</a>
             </div>
           </div>
@@ -71,14 +71,15 @@
         <div><a class="btn btn-primary btn-lg mt-2 mt-lg-4" href="/about-us.php" role="button">About Us</a></div>
       </div>
     </div>
+    <h1 class="position-absolute text-white" style="font-size: 0.7rem">The Premier Automotive Service Center for OEM in the USA</h1>
   </section>
   <!-- End Serving the Automotive Industry -->
   <!-- Model Services -->
   <section id="model-services" class="container-fluid d-flex align-items-center">
     <div class="container text-center">
-      <h2 class="text-white text-center">Model Services</h2>
+      <h2 class="text-white text-center">Model Electronics Services</h2>
       <p class="large-p text-center text-white mt-3">We provide our customers with a realized savings in inventory and quality control and labor, plus improved vehicle downtime for the consumer.</p>
-      <div class="row text-white mt-4">
+      <div class="checklist-container row text-white mt-4">
         <div class="col-12 col-md-6 ps-0 pe-0 pe-md-4">
          <ul class="checklist">
           <li>Advanced exchange program</li>
