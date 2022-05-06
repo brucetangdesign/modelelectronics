@@ -61,3 +61,275 @@
     }
   }
 }
+
+#company-history {
+  padding: 90px 50px;
+
+  > .container {
+    position: relative;
+    margin-top: 50px;
+    padding: 40px 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top:0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #CCCCCC;
+    }
+  }
+
+  @include media-breakpoint-down (lg) {
+    padding: 70px 36px;
+  }
+
+  @include media-breakpoint-down (sm) {
+    padding: 50px 30px;
+
+    >.container {
+      padding-left: 26px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:before {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 96px;
+
+  &:last-of-type {
+    margin-bottom: 0 !important;
+  }
+
+  > div {
+    width: 50%;
+
+    &:first-of-type {
+      padding-right: 60px;
+    }
+
+    &:last-of-type {
+      padding-left: 60px;
+    }
+  }
+
+  &.img-on-right {
+    flex-direction: row-reverse;
+
+    > div {    
+      &:first-of-type {
+        padding-right: 0 !important;
+        padding-left: 60px;
+      }
+    
+      &:last-of-type {
+        padding-left: 0 !important;
+        padding-right: 60px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 70px;
+
+    > div {
+      &:first-of-type {
+        padding-right: 40px;
+      }
+    
+      &:last-of-type {
+        padding-left: 40px;
+      }
+    }
+
+    &.img-on-right {
+      > div {
+        &:first-of-type {
+          padding-left: 40px;
+        }
+  
+        &:last-of-type {
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down (sm) {
+    flex-direction: column !important;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    
+    > div {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      width: 100%;
+    }
+  }
+}
+
+.history-img-container {
+  text-align: right;
+
+  picture {
+    display: inline-block;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.16);
+  }
+
+  .img-on-right &{
+    text-align: left;
+  }
+
+  @include media-breakpoint-down(lg) {
+    picture > *, > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include media-breakpoint-down (sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.history-caption {
+  position: relative;
+}
+
+.history-year {
+  font-family: Inter-ExtraBold;
+  font-size: 90px;
+  color: $primary;
+  position: relative;
+  margin-bottom: 7px;
+  line-height: 1;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+  }
+
+  &:before {
+    width: 50px;
+    height: 1px;
+    background-color: #CCCCCC;
+    left: -60px;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: $secondary;
+    left: -60px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .img-on-right & {
+    text-align: right;
+
+    &:before {
+      left: auto !important;
+      right: -60px;
+    }
+
+    &:after {
+      left: auto !important;
+      right: -60px;
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+
+  @include media-breakpoint-down (lg) {
+    font-size: 74px;
+    
+    &:before {
+      width: 30px;
+    }
+
+    &:before, &:after {
+      left: -40px;
+    }
+
+    .img-on-right & {
+      &:before,
+      &:after {
+        right: -40px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down (md) {
+    font-size: 60px;
+  }
+
+  @include media-breakpoint-down (sm) {
+    text-align: left !important;
+    margin-bottom: 5px;
+    
+    &:before {
+      width: 17px;
+    }
+
+    &:after {
+      width: 12px;
+      height: 12px;
+      transform: translateX(-50%) translateY(-50%) !important;
+    }
+
+    &:before, &:after {
+      left: -26px !important;
+      right: auto !important;
+    }
+
+    .img-on-right & {
+      &:before,
+      &:after {
+        left: -26px !important;
+        right: auto !important;
+      }
+    }
+  }
+}
+
+.history-text {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  max-width: 530px;
+
+  .img-on-right & {
+    right: 0;
+    text-align: right;
+  }
+
+  @include media-breakpoint-down (lg) {
+    font-size: 20px;
+  }
+  
+  @include media-breakpoint-down (md) {
+    font-size: 17px;
+  }
+  
+  @include media-breakpoint-down (sm) {
+    width: 100%;
+    font-size: 16px;
+    height: auto;
+    right: auto;
+    text-align: left !important;
+  }
+}
