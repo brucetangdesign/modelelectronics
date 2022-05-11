@@ -20,16 +20,16 @@
         <nav class="pt-3 pb-3">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="services.php">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about-us.php">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="contact-us.php">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Aftermarket Products</a>
+              <a class="nav-link" href="http://www.modelelectronicsaes.com/" target="_blank" rel="nofollow">Aftermarket Products</a>
             </li>
           </ul>
         </nav>
