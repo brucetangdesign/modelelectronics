@@ -274,6 +274,12 @@
   color: #ACACAC;
   padding: 0 50px;
 
+  > .container {
+    @include media-breakpoint-down (xl) {
+      max-width: 100%;
+    }
+  }
+
   a {
     color: #ACACAC;
     text-decoration: none;;

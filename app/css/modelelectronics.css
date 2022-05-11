@@ -11995,6 +11995,11 @@ footer .nav-link:hover, footer .nav-link:focus {
   color: #ACACAC;
   padding: 0 50px;
 }
+@media (max-width: 1199.98px) {
+  .breadcrumb > .container {
+    max-width: 100%;
+  }
+}
 .breadcrumb a {
   color: #ACACAC;
   text-decoration: none;

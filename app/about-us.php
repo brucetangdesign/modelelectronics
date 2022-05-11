@@ -13,7 +13,7 @@
   <main>
     <!-- Breadcrumb -->
     <section class="breadcrumb h-0 mt-0 mb-0">
-      <div class="container position-relative p-0 mw-100">
+      <div class="container position-relative p-0">
         <span class="d-block position-relative position-lg-absolute pt-4"><a href="index.php">Home</a> > About Us</span>
       </div>
     </section>
