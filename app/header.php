@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#"><span>Services</span></a>
+              <a class="nav-link" href="services.php"><span>Services</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.php"><span>About Us</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span>Contact Us</span></a>
+              <a class="nav-link" href="contact-us.php"><span>Contact Us</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span>Aftermarket Products</span></a>
+              <a class="nav-link" href="http://www.modelelectronicsaes.com/" target="_blank" rel="nofollow"><span>Aftermarket Products</span></a>
             </li>
             <li class="nav-item ms-2 d-none d-lg-block">
               <a class="nav-link btn btn-primary btn-with-caret text-uppercase text-white" href="#" >Dealer Login</a>
