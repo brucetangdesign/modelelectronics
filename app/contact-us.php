@@ -4,7 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Model Electronics with questions, comments or feedback you have about our OEM authorized electronic components and parts.">
+  <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Contact Us | Model Electronics" />
+	<meta property="og:description" content="Contact Model Electronics with questions, comments or feedback you have about our OEM authorized electronic components and parts." />
+	<meta property="og:url" content="https://modelelectronics.com" />
+	<meta property="og:site_name" content="Model Electronics" />
+	<meta property="og:image" content="http://modelelectronics.hitekdata.com/images/model-electronics-og-image@2x.jpg" />
+	<meta property="og:image:width" content="2400" />
+	<meta property="og:image:height" content="1260" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
   <title>Contact Us | Model Electronics</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/modelelectronics.css">
 </head>
 

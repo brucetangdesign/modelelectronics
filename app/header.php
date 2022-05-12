@@ -13,7 +13,7 @@
       <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center p-0">
         <div class="d-flex align-items-center">
           <button class="navbar-toggler collapsed me-2 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"></button>
-          <img id="site-identity" src="images/logo-model-electronics.svg" width="226px" height="63px" alt="Model Electronics Logo">
+          <a href="index.php"><img id="site-identity" src="images/logo-model-electronics.svg" width="226px" height="63px" alt="Model Electronics Logo"></a>
         </div>
         <a id="dealer-login-btn-mobile" class="btn btn-primary btn-with-caret text-uppercase text-white d-lg-none" href="#" >Dealer Login</a>
         <div class="collapse navbar-collapse" id="navbarToggler">

@@ -4,7 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="For over 40 years, Model Electronics has grown to become one of the largest premier service centers for OEM and aftermarket customers.">
+  <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="About Us | Model Electronics" />
+	<meta property="og:description" content="For over 40 years, Model Electronics has grown to become one of the largest premier service centers for OEM and aftermarket customers." />
+	<meta property="og:url" content="https://modelelectronics.com" />
+	<meta property="og:site_name" content="Model Electronics" />
+	<meta property="og:image" content="http://modelelectronics.hitekdata.com/images/model-electronics-og-image@2x.jpg" />
+	<meta property="og:image:width" content="2400" />
+	<meta property="og:image:height" content="1260" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
   <title>About Us - #1 GM OEM Service Center in the Nation | Model Electronics</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/modelelectronics.css">
 </head>
 

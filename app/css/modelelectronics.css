@@ -11821,12 +11821,18 @@ footer .nav-link:hover, footer .nav-link:focus {
   background-color: #9d0000;
 }
 
+.video-img {
+  box-shadow: 10px 10px 0 #0041A3;
+  transition: all 0.2s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
 .video-link {
   position: relative;
+  transition: all 0.2s cubic-bezier(0.5, 1, 0.89, 1);
 }
 .video-link picture {
   filter: brightness(1);
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease;
 }
 .video-link:after {
   content: "";
@@ -11842,8 +11848,15 @@ footer .nav-link:hover, footer .nav-link:focus {
   transform: translateX(-50%) translateY(-50%) scale(1);
   transition: all 0.3s ease;
 }
+.video-link:hover {
+  transform: translateX(-10px) translateY(-10px);
+}
 .video-link:hover picture {
   filter: brightness(0.8);
+}
+.video-link:hover .video-img {
+  box-shadow: 20px 20px 0 #0041A3;
+  transition: all 0.2s cubic-bezier(0.5, 1, 0.89, 1);
 }
 .video-link:hover:after {
   transform: translateX(-50%) translateY(-50%) scale(1.2);
@@ -12279,7 +12292,6 @@ footer .nav-link:hover, footer .nav-link:focus {
 #news picture {
   position: relative;
   display: block;
-  box-shadow: 10px 10px 0 #0041A3;
 }
 
 #trusted-partner {
@@ -12387,7 +12399,7 @@ footer .nav-link:hover, footer .nav-link:focus {
 .ford .partner-badge-content:before {
   opacity: 0;
 }
-.infinit .partner-badge-content {
+.infiniti .partner-badge-content {
   background-color: #000000;
 }
 .kia .partner-badge-content {

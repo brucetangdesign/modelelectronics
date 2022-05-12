@@ -82,12 +82,18 @@
   }
 }
 
+.video-img {
+  box-shadow: 10px 10px 0 $secondary;
+  transition: all 0.2s $easeOutQuad;
+}
+
 .video-link {
   position: relative;
+  transition: all 0.2s $easeOutQuad;
 
   picture {
     filter: brightness(1);
-    transition: filter 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   &:after {
@@ -106,8 +112,15 @@
   }
 
   &:hover {
+    transform: translateX(-10px) translateY(-10px);
+
     picture {
       filter: brightness(0.8);
+    }
+
+    .video-img {
+      box-shadow: 20px 20px 0 $secondary;
+      transition: all 0.2s $easeOutQuad;
     }
 
     &:after {
