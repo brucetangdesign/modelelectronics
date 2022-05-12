@@ -204,6 +204,20 @@
       <!-- History Item -->
       <div class="history-item">
         <div class="history-img-container">
+          <picture>
+            <source srcset="images/model-electronics-timeline-2019-texas.webp, images/model-electronics-timeline-2019-texas@2x.webp 2x" width="495px" height="282px" type="image/webp" alt="2019 Model Electronics grows their US footprint with the addition of Model Electronics, TX">
+            <source srcset="images/model-electronics-timeline-2019-texas.jpg, images/model-electronics-timeline-2019-texas@2x.jpg 2x" width="495px" height="282px" type="image/jpeg" alt="2019 Model Electronics grows their US footprint with the addition of Model Electronics, TX"> 
+            <img src="images/model-electronics-timeline-2019-texas.jpg" width="495px" height="282px" alt="2019 Model Electronics grows their US footprint with the addition of Model Electronics, TX">
+          </picture>
+        </div>
+        <div class="history-caption">
+          <h4 class="history-year">2019</h4>
+          <p class="history-text">Model Electronics grows their US footprint with the addition of Model Electronics, TX</p>
+        </div>
+      </div>
+      <!-- History Item -->
+      <div class="history-item img-on-right">
+        <div class="history-img-container">
           <img src="images/model-electronics-timeline-2022-largest-gm-service-center-usa.svg" width="475px" height="303px" alt="2022 Model Electronics is the largest GM service center in the USA">
         </div>
         <div class="history-caption">
